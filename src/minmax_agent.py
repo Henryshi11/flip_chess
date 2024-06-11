@@ -11,15 +11,27 @@ class MinMaxAgent:
     def evaluate_board(self, board):
         """
         Evaluate the board and return a score based on the state.
-        
+    
         Parameters:
         board (Board): The board object
-        
+    
         Returns:
         int: The evaluation score
         """
-        score = board.calculate_score(self.player) - board.calculate_score(3 - self.player)
-        return score
+        rank_values = {'K': 10, 'Q': 7, 'R': 5, 'B': 4, 'N': 2.5, 'P': 1}
+        player_score = 0
+        opponent_score = 0
+    
+        for row in board.grid:
+            for piece in row:
+                if piece:
+                    if piece.player == self.player:
+                        player_score += rank_values[piece.rank]
+                    else:
+                        opponent_score += rank_values[piece.rank]
+                    
+        return player_score - opponent_score
+
 
     def get_all_valid_moves(self, board, player):
         """

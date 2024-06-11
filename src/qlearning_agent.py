@@ -9,9 +9,9 @@ class QLearningAgent:
 
 
     def __init__(self, alpha=0.3, gamma=0.8, epsilon=0.1, actions=None, player=1):
-        self.alpha = alpha #Learning rate 30% new data
-        self.gamma = gamma #Discount factor 80% future reward
-        self.epsilon = epsilon #Exploration rate 10% random move
+        self.alpha = alpha #Learning rate, 30% new data
+        self.gamma = gamma #Discount factor, 80% future reward
+        self.epsilon = epsilon #Exploration rate, 10% random move
 
         self.q_table = {}
         self.actions = actions if actions is not None else []
@@ -87,7 +87,7 @@ class QLearningAgent:
                 piece = board.grid[pos[0]][pos[1]]
                 piece.reveal()
                 reward = -1
-                action_detail = f"flipped {piece.rank} at ({pos[0] + 1}, {pos[1] + 1})"
+                action_detail = f"flipped {piece.rank} at ({pos[0]}, {pos[1]})"
             else:
                 action = 'move'
 
@@ -99,13 +99,13 @@ class QLearningAgent:
                 if board.grid[to_pos[0]][to_pos[1]] is None:
                     board.move_piece(from_pos, to_pos)
                     reward = -1
-                    action_detail = f"moved piece from ({from_pos[0] + 1}, {from_pos[1] + 1}) to ({to_pos[0] + 1}, {to_pos[1] + 1})"
+                    action_detail = f"moved piece from ({from_pos[0]}, {from_pos[1]}) to ({to_pos[0]}, {to_pos[1]})"
                 else:
                     if board.is_valid_capture(from_pos, to_pos):
                         captured_piece = board.grid[to_pos[0]][to_pos[1]]
                         board.capture_piece(from_pos, to_pos)
                         reward = 4
-                        action_detail = f"captured {captured_piece.rank} at ({to_pos[0] + 1}, {to_pos[1] + 1}) with piece from ({from_pos[0] + 1}, {from_pos[1] + 1})"
+                        action_detail = f"captured {captured_piece.rank} at ({to_pos[0]}, {to_pos[1]}) with piece from ({from_pos[0]}, {from_pos[1]})"
                     else:
                         reward = -1
                         done = True

@@ -162,7 +162,7 @@ def play_game(win, ai_type):
                 if action[0] == 'reveal':
                     _, pos = action
                     board.grid[pos[0]][pos[1]].reveal()
-                    action_detail = f"revealed piece at {pos}"
+                    action_detail = f"flip piece at {pos}"
                 else:
                     from_pos, to_pos = action
                     if board.is_valid_move(from_pos, to_pos):

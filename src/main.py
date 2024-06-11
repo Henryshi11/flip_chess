@@ -5,7 +5,6 @@ from game import play_game
 # Initialize Pygame
 pygame.init()
 
-# Define constants
 WIDTH, HEIGHT = 800, 400
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('Flip Chess')
