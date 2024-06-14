@@ -12,18 +12,18 @@ WHITE, BLACK, BLUE, RED, LIGHT_BLUE = (255, 255, 255), (0, 0, 0), (0, 0, 255), (
 
 # Load piece images (example)
 PIECE_IMAGES = {
-    'K_black': pygame.transform.scale(pygame.image.load('images/king_black.png'), (100, 100)),
-    'K_white': pygame.transform.scale(pygame.image.load('images/king_white.png'), (100, 100)),
-    'Q_black': pygame.transform.scale(pygame.image.load('images/queen_black.png'), (100, 100)),
-    'Q_white': pygame.transform.scale(pygame.image.load('images/queen_white.png'), (100, 100)),
-    'R_black': pygame.transform.scale(pygame.image.load('images/rook_black.png'), (100, 100)),
-    'R_white': pygame.transform.scale(pygame.image.load('images/rook_white.png'), (100, 100)),
-    'B_black': pygame.transform.scale(pygame.image.load('images/bishop_black.png'), (100, 100)),
-    'B_white': pygame.transform.scale(pygame.image.load('images/bishop_white.png'), (100, 100)),
-    'N_black': pygame.transform.scale(pygame.image.load('images/knight_black.png'), (100, 100)),
-    'N_white': pygame.transform.scale(pygame.image.load('images/knight_white.png'), (100, 100)),
-    'P_black': pygame.transform.scale(pygame.image.load('images/pawn_black.png'), (100, 100)),
-    'P_white': pygame.transform.scale(pygame.image.load('images/pawn_white.png'), (100, 100)),
+    'K_black': pygame.transform.scale(pygame.image.load('../images/king_black.png'), (100, 100)),
+    'K_white': pygame.transform.scale(pygame.image.load('../images/king_white.png'), (100, 100)),
+    'Q_black': pygame.transform.scale(pygame.image.load('../images/queen_black.png'), (100, 100)),
+    'Q_white': pygame.transform.scale(pygame.image.load('../images/queen_white.png'), (100, 100)),
+    'R_black': pygame.transform.scale(pygame.image.load('../images/rook_black.png'), (100, 100)),
+    'R_white': pygame.transform.scale(pygame.image.load('../images/rook_white.png'), (100, 100)),
+    'B_black': pygame.transform.scale(pygame.image.load('../images/bishop_black.png'), (100, 100)),
+    'B_white': pygame.transform.scale(pygame.image.load('../images/bishop_white.png'), (100, 100)),
+    'N_black': pygame.transform.scale(pygame.image.load('../images/knight_black.png'), (100, 100)),
+    'N_white': pygame.transform.scale(pygame.image.load('../images/knight_white.png'), (100, 100)),
+    'P_black': pygame.transform.scale(pygame.image.load('../images/pawn_black.png'), (100, 100)),
+    'P_white': pygame.transform.scale(pygame.image.load('../images/pawn_white.png'), (100, 100)),
 }
 
 def draw_board(win, board):

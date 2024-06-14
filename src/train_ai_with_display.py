@@ -24,18 +24,18 @@ pygame.display.set_caption('Flip Chess')
 
 # Load piece images (example)
 PIECE_IMAGES = {
-    'K_black': pygame.transform.scale(pygame.image.load('images/king_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
-    'K_white': pygame.transform.scale(pygame.image.load('images/king_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
-    'Q_black': pygame.transform.scale(pygame.image.load('images/queen_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
-    'Q_white': pygame.transform.scale(pygame.image.load('images/queen_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
-    'R_black': pygame.transform.scale(pygame.image.load('images/rook_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
-    'R_white': pygame.transform.scale(pygame.image.load('images/rook_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
-    'B_black': pygame.transform.scale(pygame.image.load('images/bishop_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
-    'B_white': pygame.transform.scale(pygame.image.load('images/bishop_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
-    'N_black': pygame.transform.scale(pygame.image.load('images/knight_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
-    'N_white': pygame.transform.scale(pygame.image.load('images/knight_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
-    'P_black': pygame.transform.scale(pygame.image.load('images/pawn_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
-    'P_white': pygame.transform.scale(pygame.image.load('images/pawn_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'K_black': pygame.transform.scale(pygame.image.load('../images/king_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'K_white': pygame.transform.scale(pygame.image.load('../images/king_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'Q_black': pygame.transform.scale(pygame.image.load('../images/queen_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'Q_white': pygame.transform.scale(pygame.image.load('../images/queen_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'R_black': pygame.transform.scale(pygame.image.load('../images/rook_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'R_white': pygame.transform.scale(pygame.image.load('../images/rook_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'B_black': pygame.transform.scale(pygame.image.load('../images/bishop_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'B_white': pygame.transform.scale(pygame.image.load('../images/bishop_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'N_black': pygame.transform.scale(pygame.image.load('../images/knight_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'N_white': pygame.transform.scale(pygame.image.load('../images/knight_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'P_black': pygame.transform.scale(pygame.image.load('../images/pawn_black.png'), (SQUARE_SIZE, SQUARE_SIZE)),
+    'P_white': pygame.transform.scale(pygame.image.load('../images/pawn_white.png'), (SQUARE_SIZE, SQUARE_SIZE)),
 }
 
 def draw_board(win, board):
