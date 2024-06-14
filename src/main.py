@@ -1,3 +1,6 @@
+# main.py
+# Author: Henry Shi
+
 import pygame
 import sys
 from game import play_game

@@ -1,4 +1,5 @@
 # game.py
+# Author: Henry Shi
 
 import pygame
 import sys

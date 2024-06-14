@@ -91,7 +91,7 @@ def train_agents_with_display(num_episodes=10, max_steps=150, delay=0.2):
     ai_agent_1 = QLearningAgent(actions=['flip', 'move'], player=1)
     ai_agent_2 = QLearningAgent(actions=['flip', 'move'], player=2)
 
-    # Try to load previous Q-tables
+    # load previous Q-tables
     try:
         ai_agent_1.load_q_table('ai_agent_1_q_table.pkl')
         ai_agent_2.load_q_table('ai_agent_2_q_table.pkl')
